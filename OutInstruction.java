@@ -8,15 +8,10 @@ package sml;
 
 public class OutInstruction extends Instruction {
 
-	// private int result;
 	private int op1;
 
-	public OutInstruction(String label, String op) {
-		super(label, op);
-	}
-
 	public OutInstruction(String label, int op1) {
-		this(label, "out");
+		super(label, "out");
 		this.op1 = op1;
 	}
 
@@ -29,6 +24,5 @@ public class OutInstruction extends Instruction {
 	@Override
 	public String toString() {
 		return super.toString() + " " + op1 + " to console ";
-	}
-	
+	}	
 }

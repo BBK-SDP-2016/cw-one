@@ -13,12 +13,8 @@ public class BnzInstruction extends Instruction {
 	private int register;
 	private String L2;
 	
-	public BnzInstruction(String label, String op) {
-		super(label, op);
-	}
-		
 	public BnzInstruction(String label, int register, String L2) {
-		this(label, "bnz");
+		super(label, "bnz");
 		this.register = register;
 		this.L2 = L2.trim();
 	}
