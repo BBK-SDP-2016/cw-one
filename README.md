@@ -11,3 +11,4 @@ Notes:
 Retaking SDP module from 2015.
 
 1. Initial commit of base files from Keith's central repository
+2. Commit of outstanding instructions and update to Translator.instruction
