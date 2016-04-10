@@ -1,9 +1,9 @@
 package sml;
 
 /**
- * This class ....
+ * This class stores integer 'value' in register 'register' 
  * 
- * @author someone
+ * @author Daryl Smith
  */
 
 public class LinInstruction extends Instruction {
@@ -18,7 +18,6 @@ public class LinInstruction extends Instruction {
 		super(label, "lin");
 		this.register = register;
 		this.value = value;
-
 	}
 
 	@Override

@@ -1,9 +1,9 @@
 package sml;
 
 /**
- * This class ....
+ * This class adds the contents of registers op1 and op2, storing the result in register result 
  * 
- * @author someone
+ * @author Daryl Smith
  */
 
 public class AddInstruction extends Instruction {

@@ -76,7 +76,7 @@ public class Translator {
 		int s1; // Possible operands of the instruction
 		int s2;
 		int r;
-		int x;
+		//int x;
 
 		if (line.equals(""))
 			return null;
@@ -88,14 +88,32 @@ public class Translator {
 			s1 = scanInt();
 			s2 = scanInt();
 			return new AddInstruction(label, r, s1, s2);
+		case "sub":
+			r = scanInt();
+			s1 = scanInt();
+			s2 = scanInt();
+			return new SubInstruction(label, r, s1, s2);
+		case "mul":
+			r = scanInt();
+			s1 = scanInt();
+			s2 = scanInt();
+			return new MulInstruction(label, r, s1, s2);
+		case "div":
+			r = scanInt();
+			s1 = scanInt();
+			s2 = scanInt();
+			return new DivInstruction(label, r, s1, s2);
 		case "lin":
 			r = scanInt();
 			s1 = scanInt();
 			return new LinInstruction(label, r, s1);
+		case "bnz":
+                	r = scanInt();
+                	return new BnzInstruction(label, r, line);
+		case "out":
+			s1 = scanInt();
+			return new OutInstruction(label, s1);		
 		}
-
-		// You will have to write code here for the other instructions.
-
 		return null;
 	}
 
